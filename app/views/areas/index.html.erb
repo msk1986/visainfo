@@ -1,0 +1,9 @@
+<div class="span8" id="index_search_result">
+  <% if params.size == 2 %>
+    <%= render 'layouts/map.html.erb' %>
+    <h3>国一覧</h3>
+    <%= render 'layouts/capital_letter' %>
+  <% elsif params.size > 2 %>
+    <%= render 'layouts/search_result_provisions' %>
+  <% end %>
+</div>

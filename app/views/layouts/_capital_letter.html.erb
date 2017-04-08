@@ -1,0 +1,8 @@
+<!-- 頭文字で国を絞る 検索結果ソート済み　-->
+<div id="capital_letter">
+  <h3>
+    <% for alpha in "A".."Z" do %>
+      <%= link_to alpha,  countries_search_path(alpha) %>
+    <% end %>
+  </h3>
+</div>

@@ -1,0 +1,57 @@
+<div class="span4" id="search">
+  <div id="form">
+    <nav>
+      <h3>検索フォーム</h3>
+    </nav>
+  </div>
+
+  <%= form_tag(
+  {
+    controller: "areas",
+    action: "index",
+    },
+    {
+      method: "post",
+    }
+    ) do %>
+    <% @area_form.each do |area| %>
+      <table>
+        <tr>
+          <td>
+            <label>
+              <%= check_box_tag "a#{area.id}", true %>
+              <%= area.area_name %>
+           </label>
+          </td>
+        </tr>
+      </table>
+    <% end %>
+
+    <br>
+
+    <% @visa_form.each do |visa| %>
+      <table>
+        <tr>
+          <td>
+            <label>
+              <%= check_box_tag "v#{visa.id}", true %>
+              <%= visa.visa_type %>
+            </label>
+          </td>
+        </tr>
+      </table>
+    <% end %>
+    <%= submit_tag "検索" %>
+     <script>
+      $(function() {
+        $('input')
+          .mouseover(function() {
+            $(this).css('background', 'gray');
+          })
+          .mouseout(function() {
+            $(this).css('background', 'white')
+          })
+      });
+     </script>
+  <% end %>
+</div>

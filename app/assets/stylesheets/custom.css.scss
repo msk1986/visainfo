@@ -1,0 +1,453 @@
+@import "bootstrap";
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  padding-top: 60px;
+}
+
+section {
+  overflow: auto;
+}
+
+.center {
+  text-align: center;
+  h1 {
+  	margin-bottom: 10px;
+  }
+}
+
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: $grayLight;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+a:hover {
+ text-decoration: none;
+}
+
+
+/* header */
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: Arial;
+  line-height: 1;
+
+  &:hover {
+	color: #fff;
+	text-decoration: none;
+  }
+}
+
+
+
+/* footer */
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #999;
+  a {
+    color: #555;
+    &:hover {
+      color: #222;
+    }
+  }
+  small {
+    float: left;
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 10px;
+    }
+  }
+}
+
+/* search */
+
+#search {
+  float: right;
+  width: 200px;
+  border: 1px solid silver;
+  margin: -1px;
+  border-radius: 5px;
+  background-color: DarkSlateBlue;
+  form {
+  background: -webkit-gradient(linear,left top,left bottom, from(#ffffff),to(#dfdfdf));
+  }
+  nav {
+  color:white;
+  text-align:center;
+  }
+  input ,select {
+  position:relative;
+  top:-2px;
+  }
+}
+
+
+/* visainfo */
+
+#visainfo {
+  .country_name{
+  margin-top: 40px;
+  font-size:30px;
+  text-align:center;
+  }
+  .visa_text {
+  margin-top: 50px;
+  font-size: 20px;
+  }
+}
+
+/* countries_search_result */
+
+#countries_search_result{
+  .center_text{
+  margin-top: 40px;
+  font-size:20px;
+  text-align:center;
+  }
+  table {
+  margin-top:20px;
+  margin-left:auto;
+  margin-right:auto;
+  }
+  .display_visa {
+  margin-left: 10px;
+  }
+}
+
+/* index_search_result */
+
+#index_search_result{
+  .search_provisions{
+  margin-top:20px;
+  /* 本来は 自動で真ん中に持ってきたいが、うまくいかないので暫定的にマニュアルで指定 */
+  margin-left:250px;
+  }
+  .display_visa{
+  position: absolute;
+  left: 50px;
+  }
+  .visa_enumeration{
+  position: relative;
+  top: 40px;
+  right: 260px;
+  margin-bottom: 50px;
+  }
+  table {
+  margin-top: 20px;
+  }
+}
+
+
+/* link on world map */
+
+.south_east_asia {
+  font-size:13px;
+  font-weight:bold;
+  font-color:black;
+  position:absolute; top:220px; left:220px;
+  text-shadow: 1px 1px 0 rgba(0,0,0,.2);
+  border: 4px groove #9966ff;
+  a:visited { color: black } 
+  a:link { color: black } 
+  a:active { color: red } 
+  border-color:green;
+  border: 2px groove #FF3300;
+  background-color:pink;
+}
+
+.east_asia {
+  font-size:13px;
+  font-weight:bold;
+  font-color:black;
+  position:absolute; top:150px; left:230px;
+  text-shadow: 1px 1px 0 rgba(0,0,0,.2);
+  a:visited { color: black } 
+  a:link { color: black } 
+  a:active { color: red } 
+  border-color:green;
+  border: 2px groove springgreen;
+  background:#AEFFBD;
+}
+
+.south_west_asia {
+  font-size:13px;
+  font-weight:bold;
+  font-color:black;
+  position:absolute; top:170px; left:150px;
+  text-shadow: 1px 1px 0 rgba(0,0,0,.2);
+  border: 4px groove #9966ff;
+  a:visited { color: black } 
+  a:link { color: black } 
+  a:active { color: red } 
+  border-color:green;
+  border: 2px groove #FF9933;
+  background:#FFFF99;
+}
+
+.middle_east {
+  font-size:13px;
+  font-weight:bold;
+  font-color:black;
+  position:absolute; top:170px; left:110px;
+  text-shadow: 1px 1px 0 rgba(0,0,0,.2);
+  border: 4px groove #9966ff;
+  a:visited { color: black } 
+  a:link { color: black } 
+  a:active { color: red } 
+  border-color:green;
+  background-color:violet;
+  border: 2px groove plum;
+}
+
+.oceania {
+  font-size:13px;
+  font-weight:bold;
+  font-color:black;
+  position:absolute; top:250px; left:330px;
+  text-shadow: 1px 1px 0 rgba(0,0,0,.2);
+  border: 4px groove #9966ff;
+  a:visited { color: black } 
+  a:link { color: black } 
+  a:active { color: red } 
+  border-color:green;
+  border: 2px groove #1E90FF;
+  background-color:#99CCFF;
+}
+
+.europe {
+  font-size:13px;
+  font-weight:bold;
+  font-color:black;
+  position:absolute; top:130px; left:50px;
+  text-shadow: 1px 1px 0 rgba(0,0,0,.2);
+  border: 4px groove #9966ff;
+  a:visited { color: black } 
+  a:link { color: black } 
+  a:active { color: red } 
+  border-color:green;
+  border: 2px groove aqua;
+  background-color:#CCFFFF;
+}
+
+.europe_nis {
+  font-size:13px;
+  font-weight:bold;
+  font-color:black;
+  position:absolute; top:90px; left:160px;
+  text-shadow: 1px 1px 0 rgba(0,0,0,.2);
+  border: 4px groove #9966ff;
+  a:visited { color: black } 
+  a:link { color: black } 
+  a:active { color: red } 
+  border-color:green;
+  border: 2px groove silver;
+  background-color:#DDDDDD;
+}
+
+.north_america {
+  font-size:13px;
+  font-weight:bold;
+  font-color:black;
+  position:absolute; top:140px; left:480px;
+  text-shadow: 1px 1px 0 rgba(0,0,0,.2);
+  border: 4px groove #9966ff;
+  a:visited { color: black } 
+  a:link { color: black } 
+  a:active { color: red } 
+  border-color:green;
+  border: 2px groove #B8860B;
+  background-color:#F0E68C;
+}
+
+.central_america {
+  font-size:13px;
+  font-weight:bold;
+  font-color:black;
+  position:absolute; top:200px; left:490px;
+  text-shadow: 1px 1px 0 rgba(0,0,0,.2);
+  border: 4px groove #9966ff;
+  a:visited { color: black } 
+  a:link { color: black } 
+  a:active { color: red } 
+  border-color:green;
+  border: 2px groove #FF367F;
+  background-color:#FFABCE;
+}
+
+.south_america {
+  font-size:13px;
+  font-weight:bold;
+  font-color:black;
+  position:absolute; top:250px; left:540px;
+  text-shadow: 1px 1px 0 rgba(0,0,0,.2);
+  border: 4px groove #9966ff;
+  a:visited { color: black } 
+  a:link { color: black } 
+  a:active { color: red } 
+  border-color:green;
+  border: 2px groove #009999;
+  background-color:#99CCCC;
+}
+
+.north_africa {
+  font-size:13px;
+  font-weight:bold;
+  font-color:black;
+  position:absolute; top:200px; left:40px;
+  text-shadow: 1px 1px 0 rgba(0,0,0,.2);
+  border: 4px groove #9966ff;
+  a:visited { color: black } 
+  a:link { color: black } 
+  a:active { color: red } 
+  border-color:green;
+  border: 2px groove #D2B48C;
+  background-color:#FFE4B5;
+}
+
+.south_africa {
+  font-size:13px;
+  font-weight:bold;
+  font-color:black;
+  position:absolute; top:250px; left:40px;
+  text-shadow: 1px 1px 0 rgba(0,0,0,.2);
+  border: 4px groove #9966ff;
+  a:visited { color: black } 
+  a:link { color: black } 
+  a:active { color: red } 
+  border-color:green;
+  border: 2px groove SlateBlue;
+  background-color:lavender;
+}
+
+/* link on world map */
+
+
+#img_map {
+  position:relative;
+}
+
+#capital_letter {
+  font-family:'Modern';
+}
+
+
+.visa_enumeration{
+  display: none;
+  table {
+  border-collapse: collapse;
+  width:600px;
+  margin-bottom:20px;
+  }
+  th {
+  text-align:center;
+  }
+  td {
+  border: solid 1px;
+  bordercolordark:gray;
+  bordercolorlight:silver;
+  padding: 0.5em;
+  }  
+  tr {
+  border: solid 1px;
+  }
+  .visa_type_td {
+  width:150px;
+  text-align: center;
+  vertical-align: center;
+  }
+  .country_name_th {
+  font-size:20px;
+  font-weight:normal;
+  font-family:'Century Gothic';
+  text-align: center;
+  color:white;
+  background: -webkit-linear-gradient(#555555 0% ,#777777 100%)
+  }
+  .visa_name_tr {
+  text-align:center;
+  background-color:#FFFFDD;
+  }
+}
+
+
+
+#visa_info_just_a_country{
+  font-size:15px;
+  table {
+  width:600px;
+  box-shadow: 2px 2px 4px;
+  }
+  th {
+  text-align:center;
+  }
+  td {
+  border: solid 1px;
+  bordercolordark:gray;
+  bordercolorlight:silver;
+  padding: 0.5em;
+  }  
+  tr {
+  border: solid 1px;
+  }
+  .visa_type_td {
+  width:150px;
+  text-align: center;
+  vertical-align: center;
+  }
+  .country_name_th {
+  font-size:20px;
+  font-weight:normal;
+  font-family:'Century Gothic';
+  text-align: center;
+  color:white;
+  background: -webkit-linear-gradient(#777777 0%, #555555 100%)
+  }
+  .visa_name_tr {
+  text-align:center;
+  background: rgba(255,255,0,0.2);
+  }
+}
+
+
+
+

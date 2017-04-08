@@ -1,0 +1,22 @@
+<div class="search_provisions">
+  検索条件<br>
+  <!-- 要修正 -->
+  <!-- 以下のコードはテストに通らない -->
+  <%= index_view_output %>
+  <%= @countries.size %>カ国が条件に合致しました。
+</div>
+
+<div class="center_text" style="margin-left: 250px;">
+<!-- ここはarea_pages_specのみでテストが通らない -->
+  <%= render 'layouts/countries_list' %>
+</div>
+
+<form>
+  <button class="display_visa">全ての国のビザ情報を見る</button>
+</form>
+
+<div class="visa_enumeration" style="margin-left: 250px;">
+  <%= render 'layouts/country_table' %>
+</div>
+
+<%= render 'layouts/table_jquery' %>

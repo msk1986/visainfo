@@ -1,0 +1,108 @@
+# == Schema Information
+#
+# Table name: countries
+#
+#  id           :integer          not null, primary key
+#  country_name :string
+#  created_at   :datetime         not null
+#  updated_at   :datetime         not null
+#  area_id      :integer
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+1:
+  country_id: 1
+  visa_id: 1
+  area_id: 1
+  visa_info: 台湾ビザ
+
+2:
+  country_id: 2
+  visa_id: 1
+  area_id: 1
+  visa_info: 中国ビザ
+
+3:
+  country_id: 3
+  visa_id: 1
+  area_id: 5
+  visa_info: UAEビザ
+
+4:
+  country_id: 4
+  visa_id: 3
+  area_id: 5
+  visa_info: Qatarビザ
+
+5:
+  country_id: 5
+  visa_id: 5
+  area_id: 5
+  visa_info: SaudiArabiaビザ
+
+6:
+  country_id: 6
+  visa_id: 4
+  area_id: 9
+  visa_info: Russiaビザ
+
+7:
+  country_id: 7
+  visa_id: 1
+  area_id: 8
+  visa_info: Franceビザ
+
+8:
+  country_id: 8
+  visa_id: 3
+  area_id: 6
+  visa_info: Egyptビザ
+
+9:
+  country_id: 9
+  visa_id: 1
+  area_id: 7
+  visa_info: SouthAfricaビザ
+
+10:
+  country_id: 10
+  visa_id: 3
+  area_id: 3
+  visa_info: Indiaビザ VOA
+
+11:
+  country_id: 10
+  visa_id: 2
+  area_id: 3
+  visa_info: Indiaビザ E-VISA
+
+12:
+  country_id: 11
+  visa_id: 1
+  area_id: 2
+  visa_info: Thailandビザ
+
+13:
+  country_id: 12
+  visa_id: 2
+  area_id: 4
+  visa_info: Australiaビザ
+
+14:
+  country_id: 13
+  visa_id: 2
+  area_id: 10
+  visa_info: USAビザ
+
+15:
+  country_id: 14
+  visa_id: 4
+  area_id: 11
+  visa_info: Cubaビザ
+
+16:
+  country_id: 15
+  visa_id: 4
+  area_id: 12
+  visa_info: Brazilビザ

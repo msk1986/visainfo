@@ -1,0 +1,11 @@
+$(function() {
+
+$('#index_search_result').fadeOut(200);
+
+<% if @status == "success" %>
+  $('#form_tag').append("<%= @countries.each do |i|; puts i.country_name; end %>").fadeIn(200);
+<% end %>
+
+
+
+});

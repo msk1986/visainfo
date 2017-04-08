@@ -1,0 +1,9 @@
+<table>
+  <% @countries.each do |country| %>
+    <tr>
+      <td>
+        <%= link_to country.country_name, country_path(country) %>
+      </td>
+    </tr>
+  <% end %>
+</table>

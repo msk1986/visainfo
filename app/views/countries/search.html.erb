@@ -1,0 +1,14 @@
+<div id="countries_search_result" class="span8">
+  <%= render 'layouts/capital_letter' %>
+  <% if params[:id] =~ /^[0-9]+$/ %>
+  	<div class="center_text">
+      <% @area.each do |area| %>
+        <%= area.area_name %>
+      <% end %>　
+  	</div>
+    <%= render 'layouts/countries_table', countries: @countries %>
+  <% else %>
+    <%= render 'layouts/emphasizing_capital_letter' %>
+    <%= render 'layouts/countries_table', countries: @countries %>
+  <% end %>
+</div>

@@ -1,0 +1,27 @@
+<% @countries.each do |item| %>
+  <table>
+    <tr>
+      <th class="country_name_th" colspan="2">
+      <%= item.country_name %>
+      </th>
+    </tr>
+    <tr class="visa_name_tr">
+      <td>
+        ビザ種別
+      </td>
+      <td>
+        ビザ情報
+      </td>
+    </tr>
+    <% item.visa_informations.each do |info| %>
+      <tr>
+        <td class="visa_type_td">
+          <%= info.visa_type %>
+        </td>
+        <td>
+          <%= info.visa_info %>
+        </td>
+      </tr>
+    <% end %>
+  </table>
+<% end %>

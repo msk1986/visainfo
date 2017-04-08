@@ -1,0 +1,25 @@
+<script>
+  $('.display_visa').click(function() {
+    if ($('.visa_enumeration').css('display')=='none'){
+       $('.visa_enumeration').show("normal");
+       $(this).text('全ての国のビザ情報を閉じる').insertAfter('.visa_enumeration');
+    } else {
+       $('.visa_enumeration').hide("normal");
+       $(this).text('全ての国のビザ情報を見る');
+    }
+  });
+  $(function() {
+    $('.display_visa')
+      .mouseover(function() {
+        $(this).css('background', 'gray');
+      })
+      .mouseout(function() {
+        $(this).css('background', 'white')
+      })
+  });
+  $('.visa_enumeration table:nth-child(5n+1) th').css('background', '-webkit-linear-gradient(#CC6600 0%, #FF9933 100%)');
+  $('.visa_enumeration table:nth-child(5n+2) th').css('background', '-webkit-linear-gradient(#000099 0%, #0000FF 100%)');
+  $('.visa_enumeration table:nth-child(5n+3) th').css('background', '-webkit-linear-gradient(#003300 0%, #339966 100%)');
+  $('.visa_enumeration table:nth-child(5n+4) th').css('background', '-webkit-linear-gradient(#330000 0%, #990066 100%)');
+  $('.visa_enumeration table').css('box-shadow', '2px 2px 4px');
+</script>

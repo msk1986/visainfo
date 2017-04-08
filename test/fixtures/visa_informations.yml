@@ -1,0 +1,1078 @@
+# == Schema Information
+#
+# Table name: visa_info_tables
+#
+#  id         :integer          not null, primary key
+#  country_id :integer
+#  visa_id    :integer
+#  visa_info  :string
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#  area_id    :integer
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+1 Taiwan:
+  country_id: 1
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+2 China:
+  country_id: 2
+  visa_id: 1
+  visa_info: 最大15日間の滞在に関してはビザ免除。
+
+3 UAE:
+  country_id: 3
+  visa_id: 1
+  visa_info: 最大30日間の滞在に関してはビザ免除。
+
+4 Qatar:
+  country_id: 4
+  visa_id: 3
+  visa_info: 最大30日間滞在可能なアライバルビザを取得可能。費用はQAR 100
+
+5 Saudi Arabia:
+  country_id: 5
+  visa_id: 6
+  visa_info: 2016年4月現在で観光ビザの発給はなし。
+
+6 Russia:
+  country_id: 6
+  visa_id: 4
+  visa_info: 大使館で申請することにより観光ビザを取得可能。
+
+7 France:
+  country_id: 7
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+8 Egypt:
+  country_id: 8
+  visa_id: 3
+  visa_info: Sharm El Sheik (SSH)、 Saint Catherine (SKV) or Taba (TCP)　で最大15日間滞在可能なビザを取得可能。
+
+9 South Africa:
+  country_id: 9
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+10 India voa:
+  country_id: 10
+  visa_id: 3
+  visa_info: 下記以外(注意！)の空港から入国する際はアライバルビザを取得可能。Bengaluru (BLR)Chennai(MAA)、Delhi (DEL)、Hyderabad (HYD)、Kolkata (CCU) or Mumbai(BOM)　なお、記載の空港から入国の際はE-VISAの取得が必須。 
+
+11 India e-visa:
+  country_id: 10
+  visa_id: 2
+  visa_info: e-Visaで入国可能な空港は下記の通り。Ahmedabad (AMD)、 Amritsar (ATQ)、 Bengaluru(BLR)、 Chennai (MAA)、 Delhi (DEL)、 Gaya (GAY)、 Goa (GOI)、Hyderabad (HYD)、 Jaipur (JAI)、 Kochi (COK)、 Kolkata (CCU)、Lucknow (LKO)、 Mumbai (BOM)、 Thiruvananthapuram (TRV)、Tiruchirapalli (TRZ)、 or Varanasi (VNS) 
+
+12 Thailand:
+  country_id: 11
+  visa_id: 1
+  visa_info: 最大30日間の滞在に関してはビザ免除。
+
+13 Canada:
+  country_id: 12
+  visa_id: 2
+  visa_info: WebのeTAにて申請することにより、最大6ヶ月間滞在可能。
+
+14 USA:
+  country_id: 13
+  visa_id: 2
+  visa_info: WebのESTAで申請することにより、最大90日間滞在可能。
+
+15 Cuba ツーリストカードが必須　特殊なので注意:
+  country_id: 14
+  visa_id: 4
+  visa_info: 大使館でツーリストカードを取得することで、最大30日間滞在可能。
+
+16 Brazil　オリンピック期間のみビザ免除に　いずれまた大使館申請になるものと思われる:
+  country_id: 15
+  visa_id: 1
+  visa_info: 2016オリンピック開催につき、2016年1月1日から9月18日(18日含む)まで、最大90日間の滞在に関してはビザ免除
+
+17 Singapore:
+  country_id: 16
+  visa_id: 1
+  visa_info: 最大30日間の滞在に関してはビザ免除。
+
+18 Philippines:
+  country_id: 17
+  visa_id: 1
+  visa_info: 最大30日間の滞在に関してはビザ免除。
+
+19 Myanmar e-visa:
+  country_id: 18
+  visa_id: 2
+  visa_info: e-Visaで入国可能な空港は下記の通り。Yangon (RGN)、 Mandalay (MDL) or NayPyi Taw (NYT)
+
+20 Myanmar voa:
+  country_id: 18
+  visa_id: 3
+  visa_info: 最大28日間滞在可能なアライバルビザを下記の空港で取得可能。Yangon (RGN)、 Mandalay (MDL) or NayPyi Taw (NYT)
+
+21 Malaysia:
+  country_id: 19
+  visa_id: 1
+  visa_info: 最大3ヶ月間の滞在に関してはビザ免除。
+
+22 Laos:
+  country_id: 20
+  visa_id: 1
+  visa_info: 最大15日間の滞在に関してはビザ免除。
+
+23 Indonesia:
+  country_id: 21
+  visa_id: 1
+  visa_info: 最大30日間の滞在に関してはビザ免除。※空港が限定されていたはずだがカタール航空HPには記載なし
+
+24 Cambodia voa:
+  country_id: 22
+  visa_id: 2
+  visa_info: 最大30日間滞在可能なアライバルビザを取得可能。Phnom Penh (PNH)発着を除き、日帰りの旅行は許されていないので注意。
+
+25　Camboda e-visa:
+  country_id: 22
+  visa_id: 3
+  visa_info: e-Visaを取得可能。Phnom Penh (PNH)発着を除き、日帰りの旅行は許されていないので注意。
+
+26 Brunei:
+  country_id: 23
+  visa_id: 1
+  visa_info: 最大14日間の滞在に関してはビザ免除。
+
+27 Viet Nam:
+  country_id: 24
+  visa_id: 1
+  visa_info: 最大15日間の滞在に関してはビザ免除。
+
+28 Hong Kong (SAR China) :
+  country_id: 25
+  visa_id: 1
+  visa_info: 最大3ヶ月間の滞在に関してはビザ免除。
+
+29 Korea (Dem. People's Rep.) (KP)　正確ではないがビザ情報は「発給なし」に分類:
+  country_id: 26
+  visa_id: 6
+  visa_info: 日本国内でのビザ発給情報は見当たらない。 
+
+30  Korea (Rep.) (KR):
+  country_id: 27
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+31 Macao (SAR China) (MO):
+  country_id: 28
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+32 Mongolia (MN):
+  country_id: 29
+  visa_id: 1
+  visa_info: 最大30日間の滞在に関してはビザ免除。
+
+33 Bangladesh:
+  country_id: 30
+  visa_id: 3
+  visa_info: 最大30日間滞在可能なアライバルビザを取得可能。費用は変動するが、2015年6月渡航時点で日本人は無料。
+
+34 Bhutan:
+  country_id: 31
+  visa_id: 5
+  visa_info: 旅行代理店を通して最大15日間滞在可能なビザを取得可能。
+
+35 Nepal:
+  country_id: 32
+  visa_id: 3
+  visa_info: 最大90日間滞在可能なアライバルビザを取得可能。費用は滞在日数に応じて変動。
+
+36 Pakistan:
+  country_id: 33
+  visa_id: 4
+  visa_info: 大使館で申請することにより観光ビザを取得可能。
+
+37 Sri Lanka アライバルビザもあるとの情報があるが、よくわからないのでe-Visaのみを掲載:
+  country_id: 34
+  visa_id: 2
+  visa_info: e-Visaを取得することで最大30日間滞在可能。
+
+38 Afghanistan:
+  country_id: 35
+  visa_id: 4
+  visa_info: 大使館で申請することにより観光ビザを取得可能。
+
+39 Bahrain:
+  country_id: 36
+  visa_id: 3
+  visa_info: 最大2週間滞在可能なアライバルビザを取得可能。費用はBHD 25
+
+40 Oman:
+  country_id: 37
+  visa_id: 3
+  visa_info: 最大1ヶ月滞在可能なアライバルビザを取得可能。費用は滞在日数に応じてOMR 5 〜 20と変動。 
+
+41 Syria 観光ビザを発給しているのか謎　大使館のHPは全身脱毛の業者HPに・・・:
+  country_id: 38
+  visa_id: 6
+  visa_info: 以前は大使館申請だったが、現在では大使館のURLにアクセスすると全く関係のない業者となっており、発給しているのか不明。 
+
+42 Yemen 観光ビザ発給しているのか謎:
+  country_id: 39
+  visa_id: 6
+  visa_info: 不明 
+
+43 Cyprus:
+  country_id: 40
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。 
+
+44 Iran 大使館申請の方が好ましいとの情報あり、注意が必要:
+  country_id: 41
+  visa_id: 3
+  visa_info: 下記の空港から入国する場合、最大30日間滞在可能なアライバルビザを取得可能。Gheshm Island (GSM)、Kish Island (KIH)、Mashhad (MHD)、 Esfahan (IFN)、 Shiraz (SYZ)、 Tabriz (TBZ) andTehran Imam Khomeini (IKA)
+
+45 Iraq:
+  country_id: 42
+  visa_id: 3
+  visa_info: 下記の空港から入国する場合、最大15日間滞在可能なアライバルビザを取得可能。Erbil (EBL) and Sulaymaniyah (ISU) 
+
+46 Israel:
+  country_id: 43
+  visa_id: 1
+  visa_info: 最大3ヶ月間の滞在に関してはビザ免除。
+
+47 Jordan:
+  country_id: 44 
+  visa_id: 3
+  visa_info: 最大30日間滞在可能なアライバルビザを取得可能。
+
+48 Lebanon:
+  country_id: 45
+  visa_id: 3
+  visa_info: Beirut (BEY)から入国する場合は、最大1ヶ月滞在可能なアライバルビザを取得可能。 
+
+49 Turkey:
+  country_id: 46
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+50 東ティモール Timor-Leste:
+  country_id: 47
+  visa_id: 3
+  visa_info: 最大30日間滞在可能なアライバルビザを取得可能。
+
+51 Australia:
+  country_id: 48
+  visa_id: 2
+  visa_info: WebのETA(ETAS)で申請することにより、最大3ヶ月滞在可能。
+
+52 Maldives:
+  country_id: 49
+  visa_id: 3
+  visa_info: 最大30日間滞在可能なアライバルビザを取得可能。
+
+53 New Caledonia:
+  country_id: 50
+  visa_id: 1
+  visa_info: 最大3ヶ月間の滞在に関してはビザ免除。
+
+54 New Zealand:
+  country_id: 51
+  visa_id: 1
+  visa_info: 最大3ヶ月間の滞在に関してはビザ免除。 
+
+55 Palau:
+  country_id: 52
+  visa_id: 3
+  visa_info: 最大30日間滞在可能なアライバルビザを取得可能。
+
+56 Papua New Guinea:
+  country_id: 53
+  visa_id: 3
+  visa_info: 下記の空港から入国する場合、最大30日間滞在可能なアライバルビザを取得可能。Port Moresby (POM) and Rabaul (RAB)
+
+57 Fiji:
+  country_id: 54
+  visa_id: 1
+  visa_info: 最大4ヶ月間の滞在に関してはビザ免除。
+
+58 Guam:
+  country_id: 55
+  visa_id: 2
+  visa_info: アメリカ合衆国の準州のため、入国要件はアメリカ合衆国に準ずる。ESTAで申請すると最大3ヶ月間の滞在が可能。
+
+59 Samoa カタール航空HPによるとビザ免除ではなく、Entry Permitだが、ここではビザ免除に分類:
+  country_id: 56
+  visa_id: 1
+  visa_info: 最大60日間の滞在に関してはビザ免除。
+
+60 Tonga 無料で取得可能なようなので実務上ビザ免除に違い可能性あり:
+  country_id: 57
+  visa_id: 3
+  visa_info: 最大31日間滞在可能なアライバルビザを取得可能。
+
+61 Vanuatu:
+  country_id: 58
+  visa_id: 1
+  visa_info: 最大30日間の滞在に関してはビザ免除。
+
+62 Cook Islands:
+  country_id: 59
+  visa_id: 1
+  visa_info: 最大31日間の滞在に関してはビザ免除。
+
+63 Kiribati:
+  country_id: 60
+  visa_id: 1
+  visa_info: 最大30日間の滞在に関してはビザ免除。
+
+64 Marshall Islands アライバルビザということになっているが、実務上ビザ免除と同意と思われる:
+  country_id: 61
+  visa_id: 3
+  visa_info: 最大90日間滞在可能なアライバルビザを取得可能。
+
+65 Micronesia:
+  country_id: 62
+  visa_id: 1
+  visa_info: 最大30日間の滞在に関してはビザ免除。
+
+66 Niue:
+  country_id: 63
+  visa_id: 1
+  visa_info: 最大30日間の滞在に関してはビザ免除。
+
+67 Solomon Islands　ここも実務上はビザ免除と同意と推定:
+  country_id: 64
+  visa_id: 3
+  visa_info: 最大3ヶ月間滞在可能なアライバルビザを取得可能。
+
+68 Tuvalu ビザ免除と同意と推定:
+  country_id: 65
+  visa_id: 3
+  visa_info: 最大1ヶ月間滞在可能なアライバルビザを取得可能。
+
+69 Nauru　ビザ発給見当たらず　フィジーやオーストラリアのナウル大使館での申請は可能との情報あり:
+  country_id: 66
+  visa_id: 6
+  visa_info: 日本国内での発給情報は見当たらない。
+
+70 Polynesia(French) カタール航空での表記は"French Polynesia":
+  country_id: 67
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+71 Kazakhstan:
+  country_id: 68
+  visa_id: 1
+  visa_info: 最大15日間の滞在に関してはビザ免除。
+
+72 Kyrgyzstan カタール航空によると、"VISA NOT REQUIRED"　正確にはビザ免除ではない:
+  country_id: 69
+  visa_id: 1
+  visa_info: ビザ不要。厳密にはビザ免除ではない。
+
+73 Tajikistan:
+  country_id: 70
+  visa_id: 3
+  visa_info: 最大45日間滞在可能なアライバルビザを取得可能。
+
+74 Turkmenistan:
+  country_id: 71
+  visa_id: 4
+  visa_info: 大使館で申請することにより観光ビザを取得可能。
+
+75 Uzbekistan:
+  country_id: 72
+  visa_id: 4
+  visa_info: 大使館で申請することにより観光ビザを取得可能。
+
+76 Armenia e-Visaもあるらしいが、カタール航空はVOAしか記載していないので、それに倣って記載:
+  country_id: 73
+  visa_id: 3
+  visa_info: Yerevan (EVN)で最大120日間滞在可能なアライバルビザを取得可能。
+
+77 Azerbaijan:
+  country_id: 74
+  visa_id: 3
+  visa_info: Baku (GYD)で最大30日間滞在可能なアライバルビザを取得可能。
+
+78 Belarus:
+  country_id: 75
+  visa_id: 4
+  visa_info: 大使館で申請することにより観光ビザを取得可能。
+
+79 Georgia カタール航空HPにはe-Visaの記載もあるが、そちらは割愛:
+  country_id: 76
+  visa_id: 1
+  visa_info: 最大1年間の滞在に関してはビザ免除。
+
+80 Moldova:
+  country_id: 77
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+81 Ukraine:
+  country_id: 78
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+82 Andorra フランスまたはスペインからの陸路入国のみとなるので注意:
+  country_id: 79
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。フランスまたはスペインからの陸路入国となる。
+
+83 Gibraltar:
+  country_id: 80
+  visa_id: 1
+  visa_info: 英国領。ビザ免除。パスポートチェックのみされてスタンプは押されない。
+
+84 Ireland:
+  country_id: 81
+  visa_id: 1
+  visa_info: ビザ免除。
+
+85 Spain:
+  country_id: 82
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+86 Switzerland:
+  country_id: 83
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+87 United Kingdom(GB):
+  country_id: 84
+  visa_id: 1
+  visa_info: 最大6ヶ月間の滞在に関してはビザ免除。
+
+88 Austria:
+  country_id: 85
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+89 Belgium:
+  country_id: 86
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+90 Germany:
+  country_id: 87
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+91 Italy:
+  country_id: 88
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+92 Liechtenstein:
+  country_id: 89
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+93 Malta:
+  country_id: 90
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+94 Vatican City:
+  country_id: 91
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+95 Czech:
+  country_id: 92
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+96 Denmark:
+  country_id: 93
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+97 Finland:
+  country_id: 94
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+98 Monaco:
+  country_id: 95
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+99 Norway:
+  country_id: 96
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+100 Poland:
+  country_id: 97
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+101 Sweden:
+  country_id: 98
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+102 Bulgaria:
+  country_id: 99
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+103 Estonia:
+  country_id: 100
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+104 Greece:
+  country_id: 101
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+105 Hungary:
+  country_id: 102
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+106 Iceland:
+  country_id: 103
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+107 Latvia:
+  country_id: 104
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+108 Lithuania:
+  country_id: 105
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+109 Romania:
+  country_id: 106
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+110 Slovakia:
+  country_id: 107
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+111 Albania:
+  country_id: 108
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+112 Bosnia and Herzegovina:
+  country_id: 109
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+113 Croatia:
+  country_id: 110
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+114 Luxembourg:
+  country_id: 111
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+115 Macedonia:
+  country_id: 112
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+116 Montenegro:
+  country_id: 113
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+117 Netherland:
+  country_id: 114
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+118 Serbia:
+  country_id: 115
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+119 Slovenia:
+  country_id: 116
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+120 Portugal:
+  country_id: 117
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+121 San Marino:
+  country_id: 118
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+122 Bahamas:
+  country_id: 119
+  visa_id: 1
+  visa_info: 最大3ヶ月間の滞在に関してはビザ免除。
+
+123 Belize:
+  country_id: 120
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+124 El Salvador:
+  country_id: 121
+  visa_id: 1
+  visa_info: 最大3ヶ月間の滞在に関してはビザ免除。
+
+125 Guatemala:
+  country_id: 122
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+126 Jamaica:
+  country_id: 123
+  visa_id: 1
+  visa_info: 最大30日間の滞在に関してはビザ免除。
+
+127 Mexico:
+  country_id: 124
+  visa_id: 1
+  visa_info: 最大180日間の滞在に関してはビザ免除。
+
+128 Nicaragua:
+  country_id: 125
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+129 Antigua and Barbuda:
+  country_id: 126
+  visa_id: 1
+  visa_info: ビザ免除。英連邦。
+
+130 Dominica:
+  country_id: 127
+  visa_id: 1
+  visa_info: 最大6ヶ月間の滞在に関してはビザ免除。英連邦。
+
+131 Dominican Rep.:
+  country_id: 128
+  visa_id: 1
+  visa_info: 最大3ヶ月間の滞在に関してはビザ免除。
+
+132 Haiti:
+  country_id: 129
+  visa_id: 1
+  visa_info: 最大3ヶ月間の滞在に関してはビザ免除。
+
+133 Puerto Rico:
+  country_id: 130
+  visa_id: 2
+  visa_info: アメリカ合衆国のESTA申請により最大90日間の滞在が可能。
+
+134 St. Kitts and Nevis:
+  country_id: 131
+  visa_id: 1
+  visa_info: 最大3ヶ月間の滞在に関してはビザ免除。英連邦。
+
+135 St. Lucia:
+  country_id: 132
+  visa_id: 1
+  visa_info: 最大6週間の滞在に関してはビザ免除。英連邦。
+
+136 St. Vincent and the Grenadines:
+  country_id: 133
+  visa_id: 1
+  visa_info: 最大1ヶ月間の滞在に関してはビザ免除。英連邦。
+
+137 Barbados:
+  country_id: 134
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+138 Bermuda ビザ不要との表記:
+  country_id: 135
+  visa_id: 1
+  visa_info: ビザ不要。厳密にはビザ免除ではない。英国領。
+
+139 Costa Rica:
+  country_id: 136
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+140 Grenada:
+  country_id: 137
+  visa_id: 1
+  visa_info: 最大3ヶ月間の滞在に関してはビザ免除。英連邦。
+
+141 Honduras　ビザ不要との表記:
+  country_id: 138
+  visa_id: 1
+  visa_info: ビザ不要。厳密にはビザ免除ではない。最大90日間滞在可能。
+
+142 Panama:
+  country_id: 139
+  visa_id: 1
+  visa_info: 最大180日間の滞在に関してはビザ免除。
+
+143 Virgin Isl. (British):
+  country_id: 140
+  visa_id: 1
+  visa_info: 最大30日間の滞在に関してはビザ免除。英国領。
+
+144 Virgin Isl. (USA):
+  country_id: 141
+  visa_id: 2
+  visa_info: アメリカ合衆国のESTA申請により最大90日間の滞在が可能。
+
+145 Cayman Islands:
+  country_id: 142
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。英国領。
+
+146 Anguilla:
+  country_id: 143
+  visa_id: 1
+  visa_info: 最大3ヶ月間の滞在に関してはビザ免除。英国領。
+
+147 Aruba:
+  country_id: 144
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。オランダ領。
+
+148 Bolivia:
+  country_id: 145
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+149 Chile:
+  country_id: 146
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+150 Colombia:
+  country_id: 147
+  visa_id: 1
+  visa_info: 最大180日間の滞在に関してはビザ免除。
+
+151 Ecuador:
+  country_id: 148
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+152 Paraguay:
+  country_id: 149
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+153 Peru:
+  country_id: 150
+  visa_id: 1
+  visa_info: 最大183日間の滞在に関してはビザ免除。
+
+154 Uruguay:
+  country_id: 151
+  visa_id: 1
+  visa_info: 最大3ヶ月間の滞在に関してはビザ免除。
+
+155 Argentina:
+  country_id: 152
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+156 Guyana:
+  country_id: 153
+  visa_id: 1
+  visa_info: 最大3ヶ月間の滞在に関してはビザ免除。
+
+157 Suriname:
+  country_id: 154
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+158 Trinidad and Tobago:
+  country_id: 155
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+159 Venezuela:
+  country_id: 156
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+160 Algeria:
+  country_id: 157
+  visa_id: 4
+  visa_info: 大使館で申請することにより観光ビザを取得可能。
+
+161 Chad:
+  country_id: 158
+  visa_id: 6
+  visa_info: 日本国内でのビザ発給情報は見当たらない。
+
+162 Libya　発給なしではないが、それに近いので暫定でvisa_id=6とした:
+  country_id: 159
+  visa_id: 6
+  visa_info: 現地の受け入れ先が現地で事前許可を取得することで、大使館でのビザ申請が可能になる。
+
+163 Mali 東京の大使館のHPが意外に整っている:
+  country_id: 160
+  visa_id: 4
+  visa_info: 大使館で申請することにより観光ビザを取得可能。
+
+164 Mauritania:
+  country_id: 161
+  visa_id: 3
+  visa_info: Nouakchott (NKC)でアライバルを取得可能。
+
+165 Morocco:
+  country_id: 162
+  visa_id: 1
+  visa_info: 最大3ヶ月間の滞在に関してはビザ免除。
+
+166 Niger:
+  country_id: 163
+  visa_id: 4
+  visa_info: 大使館で申請することにより観光ビザを取得可能。
+
+167 Tunisia:
+  country_id: 164
+  visa_id: 1
+  visa_info: 最大3ヶ月間の滞在に関してはビザ免除。
+
+168 Cameroon:
+  country_id: 165
+  visa_id: 4
+  visa_info: 大使館で申請することにより観光ビザを取得可能。
+
+169 Central African Rep.:
+  country_id: 166
+  visa_id: 4
+  visa_info: 大使館で申請することにより観光ビザを取得可能。
+
+170 Djibouti アライバルビザでOKとカタール航空は書いているが、他にアライバルビザ情報が見当たらないので注意:
+  country_id: 167
+  visa_id: 3
+  visa_info: アライバルビザを取得可能。※カタール航空情報　他ではこのような情報がないので？
+
+171 Eritrea:
+  country_id: 168
+  visa_id: 4
+  visa_info: 大使館で申請することにより観光ビザを取得可能。
+
+172 Ethiopia:
+  country_id: 169
+  visa_id: 3
+  visa_info: Addis Ababa (ADD)でアライバルビザを取得可能。
+
+173 Somalia カタール航空によるとアライバルビザが取得可能だが、他で同様の情報は見当たらないので注意:
+  country_id: 170
+  visa_id: 3
+  visa_info: 最大30日間滞在可能なアライバルビザを取得可能。※カタール航空情報　他ではこのような情報がないので？
+
+174 South Sudan:
+  country_id: 171
+  visa_id: 6
+  visa_info: 日本国内でのビザ発給情報は見当たらない。
+
+175 Sudan:
+  country_id: 172
+  visa_id: 4
+  visa_info: 大使館で申請することにより観光ビザを取得可能。
+
+176 Benin:
+  country_id: 173
+  visa_id: 4
+  visa_info: 大使館で申請することにより観光ビザを取得可能。
+
+177 Burkina Faso:
+  country_id: 174
+  visa_id: 4
+  visa_info: 大使館で申請することにより観光ビザを取得可能。
+
+178 Cote d'Ivoire:
+  country_id: 175
+  visa_id: 4
+  visa_info: 大使館で申請することにより観光ビザを取得可能。
+
+179 Ghana:
+  country_id: 176
+  visa_id: 4
+  visa_info: 大使館で申請することにより観光ビザを取得可能。
+
+180 Liberia:
+  country_id: 177
+  visa_id: 4
+  visa_info: 大使館で申請することにより観光ビザを取得可能。
+
+181 Nigeria:
+  country_id: 178
+  visa_id: 4
+  visa_info: 大使館で申請することにより観光ビザを取得可能。
+
+182 Togo アライバルビザ取得情報あり:
+  country_id: 179
+  visa_id: 4
+  visa_info: 大使館で申請することにより観光ビザを取得可能。 ※アライバルビザ取得情報あり
+
+183 Cape Verde:
+  country_id: 180
+  visa_id: 3
+  visa_info: アライバルビザを取得可能。
+
+184 Gambia:
+  country_id: 181
+  visa_id: 3
+  visa_info: アライバルビザを取得可能。 ※カタール航空HPには記述がないが、公式HPに記述あり
+
+185 Guinea:
+  country_id: 182
+  visa_id: 4
+  visa_info: 大使館で申請することにより観光ビザを取得可能。
+
+186 Guinea-Bissau 本情報はカタール航空HPのみなので注意:
+  country_id: 183
+  visa_id: 3
+  visa_info: 最大90日間滞在可能なアライバルビザを取得可能。※カタール航空HPには左記の記述があるが、他では同様の情報見当たらず。
+
+187 Senegal:
+  country_id: 184
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。
+
+188 Sierra Leone:
+  country_id: 185
+  visa_id: 4
+  visa_info: 駐日シエラレオネ大使館は存在しないが、東京と大阪にある英国ビザ申請センターで観光ビザの取得が可能。※日本国外務省情報
+
+189 Burundi:
+  country_id: 186
+  visa_id: 3
+  visa_info: Bujumbura (BJM)で最大3ヶ月間滞在可能なアライバルビザを取得可能。
+
+190 Congo:
+  country_id: 187
+  visa_id: 4
+  visa_info: 大使館で申請することにより観光ビザを取得可能。
+
+191 Congo (Dem. Rep.) :
+  country_id: 188
+  visa_id: 4
+  visa_info: 大使館で申請することにより観光ビザを取得可能。
+
+192 Equatorial Guinea:
+  country_id: 189
+  visa_id: 6
+  visa_info: 日本国内でのビザ発給情報は見当たらない。
+
+193 Gabon e-Visaが取れるとカタール航空は仰っているが・・・ 公式HPあった！:
+  country_id: 190
+  visa_id: 4
+  visa_info: 大使館で申請することにより観光ビザを取得可能。※カタール航空HPによるとe-Visa情報がある https://evisa.dgdi.ga/
+
+194 Kenya:
+  country_id: 191
+  visa_id: 3
+  visa_info: 最大3ヶ月間滞在可能なアライバルビザを取得可能。
+
+195 Rwanda:
+  country_id: 192
+  visa_id: 2
+  visa_info: e-Visaを取得可能 ※http://www.japan.embassy.gov.rw/index.php?id=1764
+
+196 Sao Tome and Principe:
+  country_id: 193
+  visa_id: 2
+  visa_info: e-Visaを取得可能。※http://www.smf.st/virtualvisa/
+
+197 Uganda:
+  country_id: 194
+  visa_id: 3
+  visa_info: アライバルビザを取得可能。
+
+198 Angola:
+  country_id: 195
+  visa_id: 4
+  visa_info: 大使館で申請することにより観光ビザを取得可能。
+
+199 Comoros:
+  country_id: 196
+  visa_id: 3
+  visa_info: アライバルビザを取得可能。
+
+200 Madagascar:
+  country_id: 197
+  visa_id: 3
+  visa_info: 最大30日間滞在可能なアライバルビザを取得可能。
+
+201 Malawi:
+  country_id: 198
+  visa_id: 3
+  visa_info: 最大30日間滞在可能なアライバルビザを取得可能。
+
+202 Mauritius:
+  country_id: 199
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。英連邦。
+
+203 Mayotte:
+  country_id: 200
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。フランス領。
+
+204 Seychelles:
+  country_id: 201
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。英連邦。
+
+205 Tanzania:
+  country_id: 202
+  visa_id: 3
+  visa_info: アライバルビザを取得可能。
+
+206 Zambia:
+  country_id: 203
+  visa_id: 3
+  visa_info: アライバルビザを取得可能。
+
+207 Botswana:
+  country_id: 204
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。英連邦。
+
+208 Lesotho:
+  country_id: 205
+  visa_id: 1
+  visa_info: 最大90日間の滞在に関してはビザ免除。英連邦。
+
+209 Mozambique:
+  country_id: 206
+  visa_id: 3
+  visa_info: 下記の空港で最大30日間滞在可能なビザを取得可能。Beira (BEW)、 Nampula(APL)、 Maputo (MPM)、 Pemba (POL)、 Tete (TET) and Vilankulo(VNX)
+
+210 Namibia:
+  country_id: 207
+  visa_id: 1
+  visa_info: 最大3ヶ月間の滞在に関してはビザ免除。英連邦。
+
+211 Swaziland:
+  country_id: 208
+  visa_id: 1
+  visa_info: 最大30日間の滞在に関してはビザ免除。
+
+212 Zimbabwe:
+  country_id: 209
+  visa_id: 3
+  visa_info: アライバルビザを取得可能。
+
+213 Kuwait:
+  country_id: 210
+  visa_id: 3
+  visa_info: 最大3ヶ月間滞在可能なアライバルビザを取得可能。

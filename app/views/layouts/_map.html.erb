@@ -1,0 +1,151 @@
+<!-- エリア一覧 -->
+<div id="img_map">
+  <%= image_tag 'map.jpg' %>
+  <div class="south_east_asia">
+    <a href="/countries/search/2">東南アジア</a>
+  </div>
+  <div class="east_asia">
+    <a href="/countries/search/1">東アジア</a>
+  </div>
+  <div class="south_west_asia">
+    <a href="/countries/search/3">南西アジア</a>
+  </div>
+  <div class="middle_east">
+    <a href="/countries/search/5">中東</a>
+  </div>
+  <div class="oceania">
+    <a href="/countries/search/4">オセアニア/大洋州</a>
+  </div>
+  <div class="europe">
+    <a href="/countries/search/6">欧州</a>
+  </div>
+  <div class="europe_nis">
+    <a href="/countries/search/7">欧州(ロシア/NIS諸国)</a>
+  </div>
+  <div class="north_america">
+    <a href="/countries/search/8">北米</a>
+  </div>
+  <div class="central_america">
+    <a href="/countries/search/9">中米</a>
+  </div>
+  <div class="south_america">
+    <a href="/countries/search/10">南米</a>
+  </div>
+  <div class="north_africa">
+    <a href="/countries/search/11">アフリカ(北側)</a>
+  </div>
+  <div class="south_africa">
+    <a href="/countries/search/12">アフリカ(南側)</a>
+  </div>
+</div>
+    
+<script>
+$(function() {
+  $('.south_east_asia')
+    .mouseover(function() {
+      $(this).css('background', '#FF3300');
+    })
+    .mouseout(function() {
+      $(this).css('background', 'pink');
+    })
+});
+$(function() {
+  $('.east_asia')
+    .mouseover(function() {
+      $(this).css('background', '#00DD00');
+    })
+    .mouseout(function() {
+      $(this).css('background', '#AEFFBD');
+    })
+});
+$(function() {
+  $('.middle_east')
+    .mouseover(function() {
+      $(this).css('background', '#FF00FF');
+    })
+    .mouseout(function() {
+      $(this).css('background', 'plum');
+    })
+});
+$(function() {
+  $('.south_west_asia')
+    .mouseover(function() {
+      $(this).css('background', '#FF9933');
+    })
+    .mouseout(function() {
+      $(this).css('background', '#FFFF99');
+    })
+});
+$(function() {
+  $('.oceania')
+    .mouseover(function() {
+      $(this).css('background', '#1E90FF');
+    })
+    .mouseout(function() {
+      $(this).css('background', '#99CCFF');
+    })
+});
+$(function() {
+  $('.europe')
+    .mouseover(function() {
+      $(this).css('background', 'aqua');
+    })
+    .mouseout(function() {
+      $(this).css('background', '#CCFFFF');
+    })
+});
+$(function() {
+  $('.europe_nis')
+    .mouseover(function() {
+      $(this).css('background', 'gray');
+    })
+    .mouseout(function() {
+      $(this).css('background', '#DDDDDD');
+    })
+});
+$(function() {
+  $('.north_america')
+    .mouseover(function() {
+      $(this).css('background', '#B8860B');
+    })
+    .mouseout(function() {
+      $(this).css('background', '#F0E68C');
+    })
+});
+$(function() {
+  $('.central_america')
+    .mouseover(function() {
+      $(this).css('background', '#FF367F');
+    })
+    .mouseout(function() {
+      $(this).css('background', '#FFABCE');
+    })
+});
+$(function() {
+  $('.south_america')
+    .mouseover(function() {
+      $(this).css('background','#009999');
+    })
+    .mouseout(function() {
+      $(this).css('background', '#99CCCC');
+    })
+});
+$(function() {
+  $('.south_africa')
+    .mouseover(function() {
+      $(this).css('background','SlateBlue');
+    })
+    .mouseout(function() {
+      $(this).css('background', 'lavender');
+    })
+});
+$(function() {
+  $('.north_africa')
+    .mouseover(function() {
+      $(this).css('background', '#D2B48C');
+    })
+    .mouseout(function() {
+      $(this).css('background', '#FFE4B5');
+    })
+});
+</script>
